@@ -8,8 +8,8 @@
         <li itemprop="name" role="menuitem" class="inline-block {{#unless @last}}separator{{/unless}}">
             <a itemprop="url" href="{{url absolute="true"}}"
                 class="godo-tracking hover:text-primary font-medium p-2 inline-block"
-                data-event-category="Footer"
-                data-event-action="Menu"
+                data-event-category="Footer-Menu"
+                data-event-action="Click"
                 data-event-label="{{label}}"
                 data-event-non-interaction="true">{{label}}</a>
         </li>
@@ -44,8 +44,8 @@
             <a itemprop="url"
                 href="{{url absolute="true"}}"
                 class="mainMenu-link godo-tracking {{#if current}}active text-primary font-semibold{{else}}hover:text-primary font-medium{{/if}}"
-                data-event-category="Header"
-                data-event-action="Menu"
+                data-event-category="Header-Menu"
+                data-event-action="Click"
                 data-event-label="{{label}}"
                 data-event-non-interaction="true">
                 {{label}}

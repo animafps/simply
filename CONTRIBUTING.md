@@ -8,7 +8,7 @@ Simply uses [Gulp](https://gulpjs.com/) as a build tool and [Yarn](https://yarnp
 
 ```bash
 # clone this repo
-$ git clone https://github.com/godofredoninja/simply.git
+$ git clone https://github.com/animafps/simply.git
 
 # Use branch Dev
 $ git checkout dev

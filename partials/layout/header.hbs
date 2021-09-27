@@ -5,8 +5,8 @@
             <a href="{{@site.url}}"
                 class="header-logo inline-block leading-none godo-tracking"
                 data-event-category="Header"
-                data-event-action="Logo"
-                data-event-label="Click"
+                data-event-action="Click"
+                data-event-label="Logo"
                 data-event-non-interaction="true">
                 {{#if @site.logo}}
                     <img src="{{img_url @site.logo size="m"}}" class="header-logo-img max-h-8 logo-default" alt="{{@site.title}}" width="115" height="30"/>
@@ -33,15 +33,15 @@
                 <svg class="icon icon--sunny m-0 hidden" style="margin-left:calc(-0.5em - 1px)"><use xlink:href="#icon-sunny"></use></svg>
             </a>
 
-            {{!-- Toggle Searcg --}}
+            {{!-- Toggle Search --}}
             <a href="javascript:;"
                 aria-label="Toggle Search"
                 class="js-modal-button godo-tracking hidden button is-white mr-2"
                 data-target="modal-search"
                 aria-haspopup="true"
                 data-event-category="Header"
-                data-event-action="Search"
-                data-event-label="Click"
+                data-event-action="Click"
+                data-event-label="Search"
                 data-event-non-interaction="true">
                 <svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg>
             </a>

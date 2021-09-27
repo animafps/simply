@@ -1,7 +1,7 @@
 {
   "name": "simply",
-  "description": "simply theme for ghost by @GodoFredoNinja",
-  "demo": "https://godofredo.ninja",
+  "description": "simply theme for ghost",
+  "demo": "https://animafps.xyz",
   "version": "0.3.4",
   "engines": {
     "ghost": ">=4.0.0",
@@ -10,11 +10,6 @@
   "license": "GPLv3",
   "screenshots": {
     "desktop": "screenshot.jpg"
-  },
-  "author": {
-    "name": "GodoFredo",
-    "email": "hello@godofredo.ninja",
-    "url": "https://godofredo.ninja"
   },
   "gpm": {
     "type": "theme",
@@ -27,16 +22,14 @@
   "keywords": [
     "ghost",
     "theme",
-    "ghost-theme",
-    "GodoFredoNinja"
+    "ghost-theme"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/godofredoninja/simply"
+    "url": "https://github.com/animafps/simply"
   },
   "bugs": {
-    "url": "https://github.com/godofredoninja/simply/issues",
-    "email": "hello@godofredo.ninja"
+    "url": "https://github.com/animafps/simply/issues"
   },
   "config": {
     "posts_per_page": 18,
