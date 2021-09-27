@@ -7,6 +7,8 @@
   - Click Menu Name
   - Click Social Media
   - Click Search
+  - Click Subscribe
+  - Click Signin
 - Sidebar
   - Click Sidebar post
 - Article
@@ -15,10 +17,14 @@
   - Click Prev Post
   - Click Related Post
   - Click Name of Tag
+- Home
+  - Click Featured Read Post
+- Footer
+  - Click Subscribe
 
 ## Settings Google Tag Manager
 
-With [Google Tag Manager](https://tagmanager.google.com/), there are a million different ways to make your tagging setup leaner and more flexible.
+With [Google Tag Manager](https://tagmanager.google.com/), there are a million different ways to make your tagging setup leaner and more flexible. You can also use other tracking utilities like [Umami](https://umami.is) which is being used on animafps.xyz
 
 > I'll use an easy way to reduce redundancy here. It's the generic event tag 😊 you guessed it!
 
