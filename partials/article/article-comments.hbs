@@ -25,7 +25,7 @@
             d.appendChild(r)
     }
     document.querySelector('.js-dark-mode').addEventListener('click', function() {
-        if (remark_config.theme === 'dark') window.REMARK42.changeTheme('light') return;
+        if (remark_config.theme === 'dark') return window.REMARK42.changeTheme('light');
         window.REMARK42.changeTheme('dark');
     });
 })(remark_config.components || ['embed'], document);
