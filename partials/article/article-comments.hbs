@@ -13,7 +13,7 @@
 !(function (e, n) {
     if (!remark_config) return;
     remark_config.url = '{{url absolute="true"}}';
-    if (document.documentElement.classList.contains("dark")) remark_config.theme = 'dark';
+    if (document.documentElement.classList.contains("dark")) window.REMARK42.changeTheme('dark');
     n.querySelector('.js-comments').classList.remove('hidden')
     for (var o = 0; o < e.length; o++) {
         var r = n.createElement('script'),
@@ -25,8 +25,8 @@
             d.appendChild(r)
     }
     document.querySelector('.js-dark-mode').addEventListener('click', function() {
-        if (remark_config.theme === 'dark') window.REMARK42.changeTheme('light')
-        window.REMARK42.changeTheme('dark')
+        if (remark_config.theme === 'dark') window.REMARK42.changeTheme('light') return;
+        window.REMARK42.changeTheme('dark');
     });
 })(remark_config.components || ['embed'], document);
 
