@@ -13,7 +13,7 @@
 !(function (e, n) {
     if (!remark_config) return;
     remark_config.url = '{{url absolute="true"}}';
-    if (e.documentElement.classList.contains("dark")) remark_config.theme = 'dark';
+    if (document.documentElement.classList.contains("dark")) remark_config.theme = 'dark';
     n.querySelector('.js-comments').classList.remove('hidden')
     for (var o = 0; o < e.length; o++) {
         var r = n.createElement('script'),
