@@ -1,6 +1,6 @@
 <div id="post-comments" class="post-comments js-comments bg-gray-150 pt-8 pb-8 hidden">
     <div class="mx-auto px-4 max-w-1000">
-        <div class="py-4 px-5 bg-white shadow rounded-md border border-gray-100">
+        <div class="py-4 px-5 shadow rounded-md border border-gray-100">
             {{!-- Disqus Comments --}}
             <div id="remark42"></div>
             <div id="disqus_thread"></div>
@@ -11,10 +11,11 @@
 {{#contentFor "scripts"}}
 <script>
 !(function (e, n) {
+    if (!remark_config) return;
+    remark_config.url = '{{url absolute="true"}}';
+    if (e.documentElement.classList.contains("dark")) remark_config.theme = 'dark';
+    n.querySelector('.js-comments').classList.remove('hidden')
     for (var o = 0; o < e.length; o++) {
-        if (!remark_config) return;
-        remark_config.url = '{{url absolute="true"}}';
-        n.querySelector('.js-comments').classList.remove('hidden')
         var r = n.createElement('script'),
             c = '.js',
             d = n.head || n.body
@@ -23,6 +24,10 @@
             (r.src = remark_config.host + '/web/' + e[o] + c),
             d.appendChild(r)
     }
+    document.querySelector('.js-dark-mode').addEventListener('click', function() {
+        if (remark_config.theme === 'dark') window.REMARK42.changeTheme('light')
+        window.REMARK42.changeTheme('dark')
+    });
 })(remark_config.components || ['embed'], document);
 
 (function(d, s, id) {
