@@ -13,7 +13,6 @@
 !(function (e, n) {
     if (!remark_config) return;
     remark_config.url = '{{url absolute="true"}}';
-    if (document.documentElement.classList.contains("dark")) window.REMARK42.changeTheme('dark');
     n.querySelector('.js-comments').classList.remove('hidden')
     for (var o = 0; o < e.length; o++) {
         var r = n.createElement('script'),
@@ -24,6 +23,7 @@
             (r.src = remark_config.host + '/web/' + e[o] + c),
             d.appendChild(r)
     }
+    if (document.documentElement.classList.contains("dark")) window.REMARK42.changeTheme('dark');
     document.querySelector('.js-dark-mode').addEventListener('click', function() {
         if (remark_config.theme === 'dark') return window.REMARK42.changeTheme('light');
         window.REMARK42.changeTheme('dark');
