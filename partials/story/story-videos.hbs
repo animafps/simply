@@ -8,15 +8,15 @@
         <a href="{{url}}" class="listen-btn button is-primary relative z-3"><span class="uppercase">{{t "Watch"}}</span></a>
     </header>
 
-    <a href="{{url}}" class="spc-c-img relative w-full md:w-1/3 flex-none bg-gray-200 story-image md:h-auto rounded-none">
+    <a href="{{url}}" class="spc-c-img relative w-full md:w-1/2 flex-none bg-gray-200 story-image md:h-auto rounded-none" style="min-width: 40%;">
         {{#if feature_image}}
         <img class="absolute u-image block blur-up lazyload"
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-srcset="{{img_url feature_image size="s"}} 300w,{{img_url feature_image size="m"}} 600w"
             data-sizes="auto"
             alt="{{title}}"
-            width="384"
-            height="216"
+            width="359"
+            height="200"
         />
         {{/if}}
     </a>
