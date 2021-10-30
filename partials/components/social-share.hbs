@@ -28,7 +28,7 @@
     <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
         target="_blank"
         rel="noopener noreferrer"
-        class="godo-tracking text-gray-900"
+        class="godo-tracking text-gray-900 mr-2"
         aria-label="{{t "Share on"}} Facebook"
         data-event-category="Article-Share"
         data-event-action="Click"
@@ -36,10 +36,10 @@
         data-event-non-interaction="true">
         <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
     </a>
-    <a href="https://toot.karamoff.dev/?text={{url absolute="true"}}"
+    <a href="https://toot.karamoff.dev/?text={{encode title}}%0A{{url absolute="true"}}"
         target="_blank"
         rel="noopener noreferrer"
-        class="godo-tracking text-gray-900 ml-2 md:hidden"
+        class="godo-tracking text-gray-900"
         aria-label="{{t "Share on"}} Mastodon"
         data-event-category="Article-Share"
         data-event-action="Click"
